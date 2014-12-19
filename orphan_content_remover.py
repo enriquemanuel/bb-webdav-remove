@@ -1,5 +1,5 @@
 import easywebdav
-import logging, sys, argparse, gzip, os, datetime,socket
+import logging, sys, argparse
 
 config = {}
 courses = []
@@ -34,7 +34,7 @@ def setVars(args):
                 if readCourseIds(args.ids):
                     global config
                     print config
-                    #execute()
+                    execute()
 
 # function to read the file that contains all the configuration
 # this comes from the config parameter and stores everything on a dictionary for easy access
@@ -84,10 +84,10 @@ def execute():
     # navigating over the list of courses
     for courseid in courses:
         # removal of folders
-        #webdav.delete( config['path'] + courseid )
+        webdav.delete( config['path'] + courseid )
 
         # go into the folder if we want to
-        webdav.cd( config['path'] + courseid )
+        #webdav.cd( config['path'] + courseid )
 
 
 # start of the program
