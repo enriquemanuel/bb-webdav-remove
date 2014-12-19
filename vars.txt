@@ -1,0 +1,8 @@
+#server should not contain any http or /
+server:blackboard.host.com
+# username and password should not be wrapped in single or double quotes
+username:your_username
+password:your_password
+#protocol can be http or https, we recommend use https
+protocol:https
+#if the line starts with # is a comment
