@@ -1,4 +1,0 @@
-server:strayeronlinetest.blackboard.com
-username:bbsupport
-password:A!0loM3@R!A@
-protocol:https
